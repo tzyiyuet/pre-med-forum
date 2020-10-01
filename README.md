@@ -1,2 +1,2 @@
 # pre-med-forum
-This project simulates a database of a acadamic forum, including the creation of the database and the retrieval of the database
+The purpose of the Premed101 database is to store the required data to display forums, topics, and posts, generate statistics, generate the leaderboard, and generate member account pages. Through creating a database that will enable the execution of the foregoing functionalities, we will succeed in facilitating the knowledge sharing between pre-medical school students, as well as current medical school students.
