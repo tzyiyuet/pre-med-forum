@@ -1,10 +1,8 @@
 **Forum(forum_ID, forum_title, number_topics)**
-
 Primary Key: forum_ID
 
 
 **Topic(topic_ID, topic_title, description, number_posts, creator_username, forum_ID)**
-
 Primary Key: topic_ID
 Foreign Key: creator_username REFERENCES Member(username)
 Foreign Key: forum_ID REFERENCES Forum(forum_ID)
