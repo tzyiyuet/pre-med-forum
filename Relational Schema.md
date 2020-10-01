@@ -1,5 +1,4 @@
-**Forum(forum_ID, forum_title, number_topics)**
-Primary Key: forum_ID
+**Forum(forum_ID, forum_title, number_topics)**  Primary Key: forum_ID
 
 
 **Topic(topic_ID, topic_title, description, number_posts, creator_username, forum_ID)**
