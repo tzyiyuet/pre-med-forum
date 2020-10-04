@@ -23,7 +23,8 @@ INSERT INTO Member VALUES
         ('Robert', '2016-02-01', '2019-03-01', 'k91ka', null, 'Senior Member',default,'Premed student at McGill Univserity'),
         ('PlsAcceptMe', '2019-03-17', '2019-03-20', 'plsplspls', 'female', 'Newbie', b'0', null),
         ('patj82','2018-12-04','2019-03-16','8j6753GHD',default,default,default,NULL),
-        ('Kex','2017-06-07','2019-03-17','jBB89kiokL','Female','Senior Member',default,NULL),			('lopo3','2012-11-03','2019-03-15','0987AbCd',default,'Moderator',default,'Our knowledge has made us cynical.
+        ('Kex','2017-06-07','2019-03-17','jBB89kiokL','Female','Senior Member',default,NULL), 
+	('lopo3','2012-11-03','2019-03-15','0987AbCd',default,'Moderator',default,'Our knowledge has made us cynical.
 Our cleverness, hard and unkind.
 We think too much and feel too little.
 More than machinery we need humanity.
@@ -108,46 +109,28 @@ CREATE TABLE Post (
 INSERT INTO 
 Post(post_title,content,post_date,post_time,topic_id,written_by_username) VALUES ('UBC Invite/Regrets 2019', "Thought I'd start this thread. When do UBC invites come out?", '2019-01-07', '06:43:00', 4, 'Alex grey'); 
 
-INSERT INTO Post(post_title,content,post_date,post_time,topic_id,written_by_username) VALUES ('Dentist in the canadian forces/army', 'Hi everyone,
-
- 
-
+INSERT INTO Post(post_title,content,post_date,post_time,topic_id,written_by_username) VALUES ('Dentist in the canadian forces/army', 'Hi everyone, 
 I am starting my 3rd year of dental school in august and I applied to the canadian forces to become a military dentist. I wrote my aptitude test but they told me there were 7 people on the waiting list before me. I have friends in the army and the army recruiter that came last year told us they were almost "desperate" to recruit dental students so I was a bit surprised and disappointed that I would at least have to wait for another year (maybe two and by then I will have graduated...) to join the canadian forces.
-
 Is anyone in the same situation? Is anyone a dentist in the army at the moment? I would like to get your feedbacks about your experience! 
-
- 
-
 Thank you,
-
- 
-
 Doomz', '2018-07-22', '09:56:00', 4, 'lopo3');
 
 INSERT INTO Post(post_title,content,post_date,post_time,topic_id,written_by_username) VALUES ('FREE Study guides', 'I have FREE study guides for the MCAT, DAT, OAT, LSAT, PCAT, GRE, and GMAT. PM me if you want one! :)', '2018-11-24', '13:45:00', 16,'lopo3');
 
-INSERT INTO Post(post_title,content,post_date,post_time,topic_id,written_by_username) VALUES ('DATcrusher subscription available! For February 219 DAT practice','Hi ! 
-
+INSERT INTO Post(post_title,content,post_date,post_time,topic_id,written_by_username) VALUES ('DATcrusher subscription available! For February 219 DAT practice','Hi! 
 For anyone planning on writing the February 2019 DAT, my DATcrusher account is available until March 25, 2019. I am selling it for a discounted price since I am no longer using the account. 
-
 I wrote the Novemeber 2018 DAT and I highly recommend DATcrusher for Canadian students writing the DAT or need practice. 
-
 Please message me or reply to this for more details! :)','2018-11-15','12:44:00',16,'premed_67');
 
 
 INSERT INTO Post(post_title,content,post_date,post_time,topic_id,written_by_username) VALUES ('Thinking of applying to OMFS Programs in the USA?',"I'd like to be a resource for people. Something that I never had. 
-
 Feel free to ask any questions regarding the application process, CBSE, 4 vs 6, interviews, grades, etc.
-
-I'm a mid-level resident at a 6 year program. 
-
-NB",'2018-11-27','15:35:00',4,'lopo3');
+I'm a mid-level resident at a 6 year program. NB",'2018-11-27','15:35:00',4,'lopo3');
 
 INSERT INTO Post(post_title,content,post_date,post_time,topic_id,written_by_username) VALUES ('UofT 2019 Application Discussion Thread','This is the place to speculate and ask questions.','2019-02-13','13:05:00',9,'Kex');
 
 
 INSERT INTO Post(post_title,content,post_date,post_time,topic_id,written_by_username) VALUES ('Writing MCAT in summer after 2nd year',"Hey,
-
 I'm in a bit of a dilemma. I want to write the MCAT this summer, but I'm not sure when I should take it. I wanna self-study it, and apparently 2 months are adequate if you don't have other commitments. However, I've looked at the test dates and almost all of the August ones are booked, so I don't know what to do. Write in July and try to re-write in August if I don't too well? Or do August test dates get rescheduled and will I have a chance to schedule for the date I'm interested in?",'2019-03-16','14:57:00',1,'Alex grey');
 
 
@@ -156,7 +139,6 @@ INSERT INTO Post(post_title,content,post_date,post_time,topic_id,written_by_user
 ('How to research', "I'll be working on a research project this summer. It will be my first time analyzing data and writing a paper. Any tips on how to work on the project efficiently? Any guides on how to approach research?", '2018-01-31', '13:23:01', 3, 'Robert'), 
 ('DMD mcgill', "as DMD results are approaching, (this upcoming wednesday), I wanted to know if there was a history of mcgill sending out results for DMD earlier than the target date, like monday or tuesday.", '2019-03-20', '06:03:00',11, 'PlsAcceptMe' ),
 ('Post-interview impressions', "Now that the McGill interviews are all done, I am starting this thread to discuss how we feel about our interview experiences. (Of course, let’s not talk about specific questions or anything confidential).
- 
 Personally, I feel great about three stations, awful about 2 stations that I’m pretty sure I’ve done poorly at, and ok about the rest.  The McGill MMI style is definitely unique. ", '2017-05-11', '18:30:01', 11, 'bazinga'); 
 
 
@@ -177,10 +159,7 @@ CREATE TABLE Reply (
 -- insert records into Reply relation
 
 INSERT INTO Reply (content, reply_date, reply_time, post_id, written_by_username)
-VALUES 
-	("Same
-
-I feel that i didn't stand out. I feel that i could done better. :( I really mess up 2-3 station as well.", '2017-05-11', '19:01:00', 8, 'Arztin90');
+VALUES ("Same I feel that i didn't stand out. I feel that i could done better. :( I really mess up 2-3 station as well.", '2017-05-11', '19:01:00', 8, 'Arztin90');
 
 INSERT INTO Reply (content, reply_date, reply_time, post_id, written_by_username)
 VALUES('Clinical research and case reports, thanks!','2018-05-23','11:20:00',6,'premed_67');
