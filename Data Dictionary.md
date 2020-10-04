@@ -10,12 +10,44 @@
 |Trophies   |Each day, a gold, silver, and bronze trophy is awarded to the members who had the most, second most, and third most liked content on the given day, respectively. The Trophies entity type stores all information about trophies awarded.   |   |A trophy is won by exactly one member.   |
 
 ## 4.2 Description of Attributes
-|**Entity Name**|**Attributes**|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+|**Entity Name**|**Attributes**|**Description**|**Data Type**|**Nulls**|**Multi-valued**|**Derived**|**Default**|
+|---|---|---|---|---|---|---|---|
+|**Forum**|forum_ID   |Unique ID for each forum   |SMALLINT|No|No|No|None|
+|   |forum_title   |Subject of the forum   |100 variable chars   |No|No|No|None|
+|   |number_topics   |Counts the number of topics associated with the given forum  |SMALLINT|No|No|No|None|
+|**Topic**|topic_ID   |Unique ID for each topic   |SMALLINT|No|No|No|None|
+|   |topic_title   |Title of the topic   |100 variable chars   |No|No|No|None|
+|   |description   |Textual description of the topic   |Text   |Yes   |No   |No   |null   |
+|   |number_posts   |Counts the number of posts that the topic contains   |Integer   |No   |No   |Yes   |None   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
+|   |   |   |   |   |   |   |   |
