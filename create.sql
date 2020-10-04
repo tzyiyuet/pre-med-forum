@@ -1,9 +1,4 @@
-/*
-Deliverable 3: INSY 437
-Names: Alexa Hernandez (260743067), Sasha Kahzdan (260666176), Vittoria Vecchioli (260720859), Yiyue Tan (260825127) 
-*/
-
-# Create Member relation 
+-- Create Member relation
 
 CREATE TABLE Member ( 
 	username VARCHAR(20) NOT NULL,
@@ -17,7 +12,7 @@ CREATE TABLE Member (
 	PRIMARY KEY (username)
 ); 
 
-# insert records into Member relation
+-- insert records into Member relation
 
 INSERT INTO Member VALUES
         ('bazinga', '2017-01-01', '2019-03-15', 'bazingarules', 'male', 'Moderator', b'1', null),
@@ -40,7 +35,7 @@ Without these qualities, life will be violent and all will be lost.'),
         ('Arztin90','2013-08-12','2019-01-07','JJJKKK9j9k','Female','Moderator',default,'test');
         
         
-# Create Forum relation 
+-- Create Forum relation 
 
 CREATE TABLE Forum (
 	forum_id SMALLINT AUTO_INCREMENT,
@@ -48,7 +43,7 @@ CREATE TABLE Forum (
 	PRIMARY KEY (forum_id) 
 ); 
 
-# insert records into Forum relation
+-- insert records into Forum relation
 
 INSERT INTO Forum (forum_title) VALUES 
 	('GENERAL PREMED AND MED SCHOOL TOPICS'), 
@@ -59,7 +54,7 @@ INSERT INTO Forum (forum_title) VALUES
     ('INFORMATION EXCHANGE'); 
 
 
-# Create Topic relation 
+-- Create Topic relation 
 
 CREATE TABLE Topic (
 	topic_id SMALLINT AUTO_INCREMENT,
@@ -72,7 +67,7 @@ CREATE TABLE Topic (
 	FOREIGN KEY (creator_username) REFERENCES Member(username)
 );
 
-# insert records into Topic relation
+-- insert records into Topic relation
 
 INSERT INTO Topic (topic_title, description, forum_id, creator_username) VALUES
 	('General Premed Discussions', 'Premed topics on Canadian med school admissions. Specific med school topics go below in their respective medical school forums.', 1, 'Robert'), 
@@ -93,7 +88,7 @@ INSERT INTO Topic (topic_title, description, forum_id, creator_username) VALUES
 	('Fore Sale/Trade Classifieds', 'Your place to sell old premed and medical items (eg. MCAT/DAT supplies, textbooks, etc). No dealers please.', 6, 'Robert'); 
      
      
-# Create Post relation
+-- Create Post relation
 
 CREATE TABLE Post ( 
 	post_id  SMALLINT NOT NULL AUTO_INCREMENT, 
@@ -108,7 +103,8 @@ CREATE TABLE Post (
 	FOREIGN KEY (written_by_username) REFERENCES Member(username)
 ); 
 
-# insert records into Post relation
+-- insert records into Post relation
+
 INSERT INTO 
 Post(post_title,content,post_date,post_time,topic_id,written_by_username) VALUES ('UBC Invite/Regrets 2019', "Thought I'd start this thread. When do UBC invites come out?", '2019-01-07', '06:43:00', 4, 'Alex grey'); 
 
@@ -164,7 +160,7 @@ INSERT INTO Post(post_title,content,post_date,post_time,topic_id,written_by_user
 Personally, I feel great about three stations, awful about 2 stations that I’m pretty sure I’ve done poorly at, and ok about the rest.  The McGill MMI style is definitely unique. ", '2017-05-11', '18:30:01', 11, 'bazinga'); 
 
 
-# Create Reply relation
+-- Create Reply relation
 
 CREATE TABLE Reply ( 
 	reply_id SMALLINT NOT NULL AUTO_INCREMENT,
@@ -178,7 +174,7 @@ CREATE TABLE Reply (
 	FOREIGN KEY (post_id) REFERENCES Post (post_id)
 ); 
 
-# insert records into Reply relation
+-- insert records into Reply relation
 
 INSERT INTO Reply (content, reply_date, reply_time, post_id, written_by_username)
 VALUES 
@@ -199,8 +195,7 @@ INSERT INTO Reply (content, reply_date, reply_time, post_id, written_by_username
 VALUES('Strap yourself in, prepare for endless delays and frustration. Prepare to have your work scrutinized to no end. There is no such thing as efficiency. Its fun though. Enjoy, welcome to research.','2018-05-28','22:20:00',6,'doctorwho');
 
 
-
-# Create Reaction relation
+-- Create Reaction relation
 
 CREATE TABLE Reaction ( 
 	reaction_id INTEGER NOT NULL AUTO_INCREMENT,
@@ -232,7 +227,7 @@ INSERT INTO Reaction(type, post_id, reply_id, from_username) VALUES
     ('like', 5, null, 'Alex grey'); 
    
 
-# Create Trophy relation
+-- Create Trophy relation
 
 CREATE TABLE Trophy ( 
 	place SMALLINT NOT NULL,
@@ -242,12 +237,12 @@ CREATE TABLE Trophy (
 	FOREIGN KEY (username) REFERENCES Member(username)
 ); 
 
-# insert records into Trophy table
+-- insert records into Trophy table
 
 INSERT INTO Trophy VALUES (1,'Robert','2018-09-21'),(2,'jay8502','2019-01-02'),(3,'Kex','2019-03-01'),(1,'Robert','2019-01-13'),(2,'Arztin90','2019-01-03');
 
 
-# Create Following relation
+-- Create Following relation
 
 CREATE TABLE Following(
 	username_following VARCHAR(20) NOT NULL,
@@ -257,7 +252,7 @@ CREATE TABLE Following(
 	FOREIGN KEY (username_following) REFERENCES Member(username)
 ); 
 
-# insert records into Following relation
+-- insert records into Following relation
 
 INSERT INTO Following VALUES 
 	('Alex grey','Arztin90'),
@@ -267,8 +262,8 @@ INSERT INTO Following VALUES
     ('doctorwho','Robert'), 
     ('bambi', 'TopChef'),
     ('future_doc', 'bambi'); 
-    
-# Create Member_Follows_Topic relation
+
+-- Create Member_Follows_Topic relation
 
 CREATE TABLE Member_Follows_Topic ( 
 	topic_id SMALLINT NOT NULL,
@@ -278,7 +273,7 @@ CREATE TABLE Member_Follows_Topic (
 	FOREIGN KEY (topic_id) REFERENCES Topic(topic_id)
 ); 
 
-# insert records into Member_Follows_Topic relation 
+-- insert records into Member_Follows_Topic relation 
 
 INSERT INTO Member_Follows_Topic VALUES 
 	(11,'Robert'),
@@ -291,7 +286,7 @@ INSERT INTO Member_Follows_Topic VALUES
     (11, 'premed_67'),
     (11, 'bazinga');
 
-# Create Member_Manages_Forum relation
+-- Create Member_Manages_Forum relation
 
 CREATE TABLE Member_Manages_Forum (
 	forum_id SMALLINT NOT NULL,
@@ -301,7 +296,7 @@ CREATE TABLE Member_Manages_Forum (
 	FOREIGN KEY (username) REFERENCES Member(username)
 );	
 
-# insert records into Member_Manages_Forum relation 
+-- insert records into Member_Manages_Forum relation 
 
 INSERT INTO Member_Manages_Forum VALUES 
 	(4,'Robert'),
