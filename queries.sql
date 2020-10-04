@@ -1,11 +1,3 @@
-
-/*
-Deliverable 3: INSY 437
-Names: Alexa Hernandez (260743067), Sasha Kahzdan (260666176), Vittoria Vecchioli (260720859), Yiyue Tan (260825127) 
-*/
-
-
-
 /*
 Query 1: List all members who are moderators and have used a reaction
 */
