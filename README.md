@@ -5,3 +5,4 @@ The table of content can be found as the following:
 1. [Overview](https://github.com/tzyiyuet/pre-med_forum/blob/master/Overview.md)
 2. [Mission Statement and Objectives](https://github.com/tzyiyuet/pre-med_forum/blob/master/Mission%20Statement%20and%20Objectives%2Cmd)
 3. [Entity Relationship Diagram](https://github.com/tzyiyuet/pre-med_forum/blob/master/ERD.JPG)
+4. [Data Dictionary](https://github.com/tzyiyuet/pre-med_forum/blob/master/Data%20Dictionary.md)
