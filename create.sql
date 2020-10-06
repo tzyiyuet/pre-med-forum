@@ -5,7 +5,7 @@ CREATE TABLE Member (
 	date_joined DATE NOT NULL,
 	last_visited DATE NOT NULL,
 	password VARCHAR(20) NOT NULL,
-	gender VARCHAR(12) DEFAULT 'Not Telling', 
+	gender ENUM('Male', 'Female', 'Other', 'Not Telling') DEFAULT 'Not Telling', 
 	member_rank ENUM('Newbie', 'Senior Member', 'Moderator') DEFAULT 'Newbie', 
 	active BIT DEFAULT B'0',
 	about_me text,
@@ -24,14 +24,13 @@ INSERT INTO Member VALUES
         ('PlsAcceptMe', '2019-03-17', '2019-03-20', 'plsplspls', 'female', 'Newbie', b'0', null),
         ('patj82','2018-12-04','2019-03-16','8j6753GHD',default,default,default,NULL),
         ('Kex','2017-06-07','2019-03-17','jBB89kiokL','Female','Senior Member',default,NULL), 
-	('lopo3','2012-11-03','2019-03-15','0987AbCd',default,'Moderator',default,'Our knowledge has made us cynical.
-Our cleverness, hard and unkind.
-We think too much and feel too little.
-More than machinery we need humanity.
-More than cleverness we need kindness and gentleness.
-Without these qualities, life will be violent and all will be lost.'), 
-		('jay8502','2017-02-02','2019-02-28','bnJD82Kj','Male','Senior Member',default,NULL),				('TopChef','2016-04-05','2019-03-17','bubuLULU99','Male','Senior Member',default,NULL),
-        ('Alex grey','2017-09-14','2019-03-11','phD66552ok','Female',default,default,NULL),						('zizoupandacad','2012-12-30','2019-03-16','panda6754Hy',default,'Newbie',default,NULL),					('montreal25','2015-10-21','2019-03-14','vbghJ9988',default,default,default,NULL),
+	('lopo3','2012-11-03','2019-03-15','0987AbCd',default,'Moderator',default,'Our knowledge has made us cynical. Our cleverness, hard and unkind. We think too much and feel too little. 
+	 More than machinery we need humanity. More than cleverness we need kindness and gentleness. Without these qualities, life will be violent and all will be lost.'), 
+	('jay8502','2017-02-02','2019-02-28','bnJD82Kj','Male','Senior Member',default,NULL),				
+	('TopChef','2016-04-05','2019-03-17','bubuLULU99','Male','Senior Member',default,NULL),
+        ('Alex grey','2017-09-14','2019-03-11','phD66552ok','Female',default,default,NULL),						
+	('zizoupandacad','2012-12-30','2019-03-16','panda6754Hy',default,'Newbie',default,NULL),					
+	('montreal25','2015-10-21','2019-03-14','vbghJ9988',default,default,default,NULL),
         ('eg0g','2017-10-03','2019-03-15','67ghjPlPbn','Male','Moderator',default,NULL),
         ('Arztin90','2013-08-12','2019-01-07','JJJKKK9j9k','Female','Moderator',default,'test');
         
