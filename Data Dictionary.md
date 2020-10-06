@@ -44,10 +44,10 @@
 |   |day_won   |Counts the number of first place trophies the member has won  |SMALLINT|No|No|Yes|None|
 |   |active   |Has value 1 if member is currently online, 0 otherwise   |Bit   |No   |No   |0   |
 |   |about_me   |Textual description about the member   |Text   |No   |No   |null|
-|**Reply**|reply_ID   |Unique ID for each reply   |Small int   |No|No|None|
+|**Reply**|reply_ID   |Unique ID for each reply   |SMALLINT  |No|No|None|
 |   |text   |Textual content of the reply   |Text   |No|No|None|
 |**Trophies**   |trophy_id   |Unique ID for each trophy   |Integer   |No|No|None|
-|   |place   |Describes the placement of the trophy; that is, 1 = first place, 2 = second place, and 3 = third place.   |Small int   |No|No|None|
-|**Reaction**|reaction_ID   |Unique ID for each reaction   |Small int   |No|No|None|
+|   |place   |Describes the placement of the trophy; that is, 1 = first place, 2 = second place, and 3 = third place.   |SMALLINT   |No|No|None|
+|**Reaction**|reaction_ID   |Unique ID for each reaction   |SMALLINT  |No|No|None|
 |   |type   |Describes the type of reaction. The type can be one of five options; namely, ‘like’, ‘sad’, ‘confused’, ‘haha’, or ‘thanks’.   |ENUM(‘like’, ‘sad’, ‘confused’, ‘haha’, ‘thanks’)   |No|No|None|
 
