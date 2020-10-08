@@ -7,6 +7,6 @@ The table of content can be found as the following:
 3. [Entity Relationship Diagram](https://github.com/tzyiyuet/pre-med_forum/blob/master/ERD.JPG)
 4. [Data Dictionary](https://github.com/tzyiyuet/pre-med_forum/blob/master/Data%20Dictionary.md)
 5. [Relational Schema](https://github.com/tzyiyuet/pre-med_forum/blob/master/Relational%20Schema.md)
-6. Presentation
+6. [Presentation](https://tzyiyuet.github.io/premed_database/)
 7. [Code to Create the Database](https://github.com/tzyiyuet/pre-med_forum/blob/master/create.sql)
 8. [Code to Retrieve Data](https://github.com/tzyiyuet/pre-med_forum/blob/master/queries.sql)
