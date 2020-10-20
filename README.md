@@ -1,5 +1,5 @@
 # Database of Premed101
-The purpose of the Premed101 database is to store the required data to display forums, topics, and posts, generate statistics, generate the leaderboard, and generate member account pages. Through creating a database that will enable the execution of the foregoing functionalities, it will succeed in facilitating the knowledge sharing between pre-medical school students, as well as current medical school students.
+The purpose of the Premed101 database is to store the required data to display forums, topics, and posts, generate statistics, generate the leaderboard, and generate member account pages. Through creating and designing a database that will enable the execution of the foregoing functionalities, it will succeed in facilitating the knowledge sharing between pre-medical school students, as well as current medical school students.
 
 The table of content can be found as the following:
 1. [Overview](https://github.com/tzyiyuet/pre-med_forum/blob/master/Overview.md)
