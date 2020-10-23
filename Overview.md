@@ -25,13 +25,13 @@ Each day, Premed101 determines the members who received the most likes on their 
 
 ![Figure 5](https://github.com/tzyiyuet/pre-med_forum/blob/master/figure5.jpg)
 
-For a given day, usres are able to query and display the top three members who received the most likes on that day, ordered by likes received.
+For a given day, users are able to query and display the top three members who received the most likes on that day, ordered by likes received.
 
-Furthermore, Premed101 generates a list o the top 8 members in terms of the most content created and the greatest reputation score (Figure 5). SThe reputation score of a member is equal to the count of the number of reactions received (of any type).
+Furthermore, Premed101 generates a list o the top 8 members in terms of the most content created and the greatest reputation score (Figure 5). The reputation score of a member is equal to the count of the number of reactions received (of any type).
 
 ![Figure 6](https://github.com/tzyiyuet/pre-med_forum/blob/master/figure6.jpg)
 
-Usrs are able to query and display a list of the 8 members who have created the most content and a list of the 8 members who have the greatest reputation.
+Users are able to query and display a list of the 8 members who have created the most content and a list of the 8 members who have the greatest reputation.
 
 ## 1.4 Generate Member Account Pages
 Users must be able to generate member account pages and display them as seen in Figure 7 below.
