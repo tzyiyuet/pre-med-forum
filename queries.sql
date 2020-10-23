@@ -15,7 +15,7 @@ WHERE m.username IN(SELECT username FROM Member_Manages_Forum) AND m.username IN
 GROUP BY username;
 
 /* 
-Query 3: A new post was created for the Topic with topic_title = "McGill Medical School". We need to generate a list of all usernames of members following the topic to send them a notification informing them of the new post.
+Query 3: A new post was created for the Topic with topic_title = 'McGill Medical School'. Generate a list of all usernames of members following the topic to send them a notification informing them of the new post.
 */ 
 
 SELECT m.username
@@ -25,7 +25,7 @@ WHERE t.topic_id = m.topic_id AND
       
       
 /* 
-Query 4: display the number of reactions, grouped by type of reaction, for the post with post_id = 8. If there are no reactions of a given type, the count should be 0. 
+Query 4: Display the number of reactions, grouped by type of reaction, for the post with post_id = 8. If there are no reactions of a given type, the count should be 0. 
 */ 
 
 SELECT t1.type, COALESCE(t2.num_reactions,0) as num_reactions
@@ -40,7 +40,7 @@ ON t1.type = t2.type
 ;
 
 /* 
-Query 5: display the count of reactions, grouped by type of reaction, that member with username 'bazinga' has received on any of his/her post and/or replies. If 'bazinga' has never received a reaction of a certain type on any of his/her posts or replies, the count should be 0. 
+Query 5: Display the count of reactions, grouped by type of reaction, that member with username 'bazinga' has received on any of his/her post and/or replies. If 'bazinga' has never received a reaction of a certain type on any of his/her posts or replies, the count should be 0. 
 */
 
 SELECT t1.type, COALESCE(t2.num_reactions,0) as num_reactions
@@ -55,7 +55,7 @@ GROUP BY type) t2
 ON t1.type = t2.type; 
 
 /* 
-Query 6: generate a list of the usernames of all members currently online 
+Query 6: Generate a list of the usernames of all members currently online 
 */
 
 SELECT username 
@@ -63,7 +63,7 @@ FROM Member
 WHERE active = 1; 
 
 /* 
-Query 7: display the username of the newest member along with the date joined.
+Query 7: Display the username of the newest member along with the date joined.
 */
 
 SELECT username, date_joined
@@ -71,7 +71,7 @@ FROM Member
 WHERE date_joined >= ALL (SELECT date_joined FROM Member); 
 
 /* 
-Query 8: we want to generate popular contributor statistics! Namely, display the username of the member who generated the most content (the most posts and replies) in the year 2018, along with the content count. 
+Query 8: Generate popular contributor statistics! Namely, display the username of the member who generated the most content (the most posts and replies) in the year 2018, along with the content count.
 */
 
 
