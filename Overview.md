@@ -38,7 +38,7 @@ Users must be able to generate member account pages and display them as seen in 
 
 ![Figure 7](https://github.com/tzyiyuet/pre-med_forum/blob/master/figure7.jpg)
 
-That is, usres must be able to query and display the username of the member, the content count (number of posts created), the date the member joined (created an account), the date the member last visited the site, the days won (the number of times of member has won a gold trophy), the date of the last day the member won a gold trophy (if applicable), the gender of the member, the rank of the member, and the reputation score of the member. The rank of the member describes his privileges in the forum. 
+That is, users must be able to query and display the username of the member, the content count (number of posts created), the date the member joined (created an account), the date the member last visited the site, the days won (the number of times of member has won a gold trophy), the date of the last day the member won a gold trophy (if applicable), the gender of the member, the rank of the member, and the reputation score of the member. The rank of the member describes his privileges in the forum. 
 
 The description of the Premed101 ranking system is not provided, and thus assumptions of the following ranks are made based on the scope of the project:
 * **Newbie**: rank is set to Newbie by default when a member account is created. No additional privileges.
