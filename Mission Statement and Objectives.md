@@ -1,8 +1,7 @@
 # 2. Mission Statement and Objectives
 
 ## 2.1 Mission Statement 
-The purpose of the Premed101 database is to store the required data to display forums, topics, and posts, generate statistics, generate the leaderboard,
-and generate member account pages. Through creating a database that will enable the execution of the foregoing functionalities, we will succeed in facilitating the knowledge sharing between pre-medical school students, as well as current medical school students.
+The purpose of the Premed101 database is to store the required data to display forums, topics, and posts, generate statistics, generate the leaderboard, and generate member account pages. Through creating and designing a database that will enable the execution of the foregoing functionalities, it will succeed in facilitating the knowledge sharing between pre-medical school students, as well as current medical school students.
 
 ## 2.2 Mission Objectives
 ### a. Data Maintenance
